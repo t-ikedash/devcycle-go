@@ -31,7 +31,6 @@ func main() {
 		DisableAutomaticEventLogging: false,
 		DisableCustomEventLogging:    false,
 	}
-	fmt.Println(sdkKey)
 	devcycleClient, err := devcycle.NewClient(sdkKey, &options)
 	if err != nil {
 		log.Fatalf("Error initializing DevCycle client: %v", err)
